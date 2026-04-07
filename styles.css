@@ -166,6 +166,13 @@ a:focus-visible, button:focus-visible {
 
 .section { padding: 3.4rem 0; }
 .section-muted { background: var(--surface-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.page-hero {
+  background: linear-gradient(145deg, rgba(8, 35, 75, 0.92), rgba(17, 65, 127, 0.82));
+  color: #fff;
+}
+.page-hero h1,
+.page-hero .hero-support { color: #fff; }
+.page-hero .eyebrow { color: #efd5a2; }
 
 h2 {
   margin: 0 0 0.65rem;
@@ -196,6 +203,10 @@ p { margin: 0 0 0.9rem; color: var(--text); }
   gap: 1rem;
   margin-top: 1.2rem;
 }
+.card-grid {
+  display: grid;
+  gap: 1rem;
+}
 .slot-card, .benefit-card {
   border: 1px solid var(--line);
   border-radius: var(--radius);
@@ -206,6 +217,14 @@ p { margin: 0 0 0.9rem; color: var(--text); }
 .slot-card h3 { font-size: 1.9rem; color: var(--brand); margin-bottom: 0.2rem; }
 .slot-card p { font-weight: 700; color: #364152; margin-bottom: 0.35rem; }
 .slot-card small { color: var(--text-muted); }
+.info-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 1.1rem;
+  box-shadow: 0 8px 24px rgba(6, 35, 79, 0.06);
+}
+.info-card h2 { text-align: left; font-size: 1.2rem; }
 
 .audience-item {
   border: 1px solid var(--line);
@@ -220,6 +239,73 @@ p { margin: 0 0 0.9rem; color: var(--text); }
 .feature-list { margin: 0.85rem 0 0; padding-left: 1.1rem; color: var(--text); }
 .feature-list li { margin-bottom: 0.5rem; }
 .feature-list.light { color: var(--text); }
+.steps-list {
+  margin: 1rem 0 0;
+  padding-left: 1.2rem;
+}
+.steps-list li { margin-bottom: 0.5rem; }
+.section-cta-inline { margin-top: 1rem; }
+
+.contact-grid {
+  display: grid;
+  gap: 1rem;
+}
+.contact-info,
+.contact-panel {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 1.1rem;
+  box-shadow: 0 8px 24px rgba(6, 35, 79, 0.06);
+}
+.contact-form {
+  display: grid;
+  gap: 0.45rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 0.65rem 0.75rem;
+  font: inherit;
+}
+.contact-form label {
+  font-size: 0.92rem;
+  color: #253447;
+  margin-top: 0.2rem;
+}
+
+.faq-list {
+  display: grid;
+  gap: 0.85rem;
+  margin-top: 1rem;
+}
+.faq-item {
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: #fff;
+  padding: 0.95rem 1rem;
+}
+.faq-item h3 { text-align: left; font-size: 1.02rem; }
+
+.testimonial-grid {
+  display: grid;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.testimonial-card {
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 1rem 1.1rem;
+  box-shadow: 0 8px 24px rgba(6, 35, 79, 0.06);
+}
+.testimonial-card p { margin-bottom: 0.65rem; }
+.testimonial-name {
+  font-weight: 700;
+  color: var(--brand);
+}
 
 .final-cta { background: linear-gradient(180deg, #f9fbff, #eef3fa); }
 .contact-cta { text-align: center; }
@@ -250,5 +336,8 @@ p { margin: 0 0 0.9rem; color: var(--text); }
   .slot-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .benefit-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .audience-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .card-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .contact-grid { grid-template-columns: 0.95fr 1.05fr; }
+  .testimonial-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .footer-grid { grid-template-columns: 1.3fr 1fr 1fr; }
 }

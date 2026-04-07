@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Testimonials | ENTSA Ventures</title>
+  <meta name="description" content="Read what clients say about ENTSA Ventures daily savings support and worker placement services in Zambia.">
+  <link rel="icon" href="./Assets/brand/entsa-logo.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css?v=20260407-entsa3">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="top-contact-bar">
+    <div class="container top-contact-inner">
+      <p>Contact: <a href="tel:+260979415130">0979415130</a> | <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="logo" aria-label="ENTSA Ventures home">
+        <img src="./Assets/brand/entsa-logo.png" alt="ENTSA logo">
+        <span class="logo-text">ENTSA Ventures</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./practice-areas.html">Focus Areas</a>
+        <a href="./faqs.html">FAQs</a>
+        <a class="active" href="./testimonials.html">Testimonials</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+260979415130">0979415130</a>
+        <a class="btn btn-primary" href="./contact.html#contact-form-panel">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero">
+      <div class="container">
+        <p class="eyebrow">Client Voices</p>
+        <h1>What People Say About ENTSA</h1>
+        <p class="hero-support">Trusted by members building savings discipline and clients sourcing trained domestic and general workers.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container testimonial-grid">
+        <article class="testimonial-card">
+          <p>"I started with one K100 slot and now I save consistently every month. ENTSA helped me build discipline."</p>
+          <div class="testimonial-name">- Market Trader, Lusaka</div>
+        </article>
+        <article class="testimonial-card">
+          <p>"The custom savings plan worked for my business income cycle. It made planning much easier."</p>
+          <div class="testimonial-name">- Small Business Owner</div>
+        </article>
+        <article class="testimonial-card">
+          <p>"We requested a domestic worker and the process was clear, fast, and professional."</p>
+          <div class="testimonial-name">- Household Client</div>
+        </article>
+        <article class="testimonial-card">
+          <p>"ENTSA gave us trained general workers who were ready to perform from day one."</p>
+          <div class="testimonial-name">- Operations Supervisor</div>
+        </article>
+        <article class="testimonial-card">
+          <p>"As a freelancer, daily saving was difficult. ENTSA made it simple and practical."</p>
+          <div class="testimonial-name">- Freelancer</div>
+        </article>
+        <article class="testimonial-card">
+          <p>"Their support team responds quickly and explains everything clearly."</p>
+          <div class="testimonial-name">- Returning Client</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container contact-cta">
+        <h2>Ready to Start Your ENTSA Journey?</h2>
+        <p>Join the savings program, request worker placement, or speak with ENTSA for guided support.</p>
+        <div class="hero-cta-group">
+          <a class="btn btn-primary" href="./contact.html#contact-form-panel">Contact ENTSA</a>
+          <a class="btn btn-secondary" href="./services.html">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html" class="logo"><img src="./Assets/brand/entsa-logo.png" alt="ENTSA logo"><span class="logo-text">ENTSA Ventures</span></a>
+        <p>Enterprise transformation solutions through daily savings support and trained worker placement services.</p>
+      </div>
+      <nav class="footer-links" aria-label="Quick links">
+        <h3 class="footer-title">Quick Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./practice-areas.html">Focus Areas</a>
+        <a href="./faqs.html">FAQs</a>
+        <a href="./testimonials.html">Testimonials</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-contact-item"><strong>Location:</strong> Lusaka, Zambia</p>
+        <p class="footer-contact-item"><strong>Phone:</strong> <a href="tel:+260979415130">0979415130</a></p>
+        <p class="footer-contact-item"><strong>Email:</strong> <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">ENTSA Ventures Copyright &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".primary-nav");
+    if (menuToggle && nav) {
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        nav.classList.toggle("nav-open");
+      });
+    }
+  </script>
+</body>
+</html>

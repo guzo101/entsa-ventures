@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQs | ENTSA Ventures</title>
+  <meta name="description" content="Frequently asked questions about ENTSA Ventures daily savings slots, custom plans, and worker placement services in Zambia.">
+  <link rel="icon" href="./Assets/brand/entsa-logo.png" type="image/png">
+  <link rel="stylesheet" href="./styles.css?v=20260407-entsa3">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="top-contact-bar">
+    <div class="container top-contact-inner">
+      <p>Contact: <a href="tel:+260979415130">0979415130</a> | <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="logo" aria-label="ENTSA Ventures home">
+        <img src="./Assets/brand/entsa-logo.png" alt="ENTSA logo">
+        <span class="logo-text">ENTSA Ventures</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./practice-areas.html">Focus Areas</a>
+        <a class="active" href="./faqs.html">FAQs</a>
+        <a href="./testimonials.html">Testimonials</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+260979415130">0979415130</a>
+        <a class="btn btn-primary" href="./contact.html#contact-form-panel">Get Started</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero">
+      <div class="container">
+        <p class="eyebrow">Support</p>
+        <h1>Frequently Asked Questions</h1>
+        <p class="hero-support">Quick answers to common questions about ENTSA savings plans and worker placement services.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="faq-list">
+          <article class="faq-item">
+            <h3>How does the daily savings program work?</h3>
+            <p>You choose a daily slot (K100, K200, K300) or request a custom plan. You then save consistently based on your selected amount.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Can I request a custom savings amount?</h3>
+            <p>Yes. ENTSA can structure a custom daily amount based on your monthly or target savings goal.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Who can join ENTSA?</h3>
+            <p>Anyone with income can join, including traders, employees, entrepreneurs, freelancers, and part-time workers.</p>
+          </article>
+          <article class="faq-item">
+            <h3>Does ENTSA offer worker placement?</h3>
+            <p>Yes. ENTSA places trained domestic and general workers for households and organizations, both part-time and full-time.</p>
+          </article>
+          <article class="faq-item">
+            <h3>How do I get started?</h3>
+            <p>Call 0979415130, email info@entsaventures.com, or use the contact form to request onboarding support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html" class="logo"><img src="./Assets/brand/entsa-logo.png" alt="ENTSA logo"><span class="logo-text">ENTSA Ventures</span></a>
+        <p>Enterprise transformation solutions through daily savings support and trained worker placement services.</p>
+      </div>
+      <nav class="footer-links" aria-label="Quick links">
+        <h3 class="footer-title">Quick Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./practice-areas.html">Focus Areas</a>
+        <a href="./faqs.html">FAQs</a>
+        <a href="./testimonials.html">Testimonials</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-contact-item"><strong>Location:</strong> Lusaka, Zambia</p>
+        <p class="footer-contact-item"><strong>Phone:</strong> <a href="tel:+260979415130">0979415130</a></p>
+        <p class="footer-contact-item"><strong>Email:</strong> <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">ENTSA Ventures Copyright &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".primary-nav");
+    if (menuToggle && nav) {
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        nav.classList.toggle("nav-open");
+      });
+    }
+  </script>
+</body>
+</html>
