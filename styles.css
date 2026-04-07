@@ -61,7 +61,25 @@ a:focus-visible, button:focus-visible {
   border-bottom: 1px solid var(--line);
 }
 .header-inner { min-height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
-.logo { text-decoration: none; color: var(--brand); font-weight: 800; letter-spacing: 0.01em; }
+.logo {
+  text-decoration: none;
+  color: var(--brand);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+}
+.logo img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  padding: 4px;
+}
+.logo-text { line-height: 1; }
 
 .menu-toggle {
   border: 1px solid var(--line);
@@ -108,9 +126,9 @@ a:focus-visible, button:focus-visible {
   color: #1e1b16;
 }
 .btn-secondary {
-  background: rgba(255,255,255,0.12);
-  color: #fff;
-  border-color: rgba(255,255,255,0.45);
+  background: #ffffff;
+  color: var(--brand);
+  border-color: var(--brand);
 }
 
 .hero {
@@ -123,6 +141,7 @@ a:focus-visible, button:focus-visible {
   margin: 0 0 0.8rem;
   font-size: clamp(2rem, 4vw, 3.15rem);
   line-height: 1.12;
+  text-align: center;
 }
 .hero-support { margin: 0; max-width: 65ch; color: rgba(255,255,255,0.9); }
 .hero-cta-group { display: flex; flex-wrap: wrap; gap: 0.7rem; margin-top: 1.25rem; }
@@ -138,9 +157,12 @@ a:focus-visible, button:focus-visible {
   text-transform: uppercase;
   letter-spacing: 0.11em;
   font-size: 0.76rem;
-  color: #efd5a2;
+  color: var(--brand);
   font-weight: 700;
 }
+.hero .eyebrow { color: #efd5a2; }
+.hero-copy h1,
+.hero-copy p { color: #ffffff; }
 
 .section { padding: 3.4rem 0; }
 .section-muted { background: var(--surface-soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
@@ -150,9 +172,10 @@ h2 {
   font-size: clamp(1.45rem, 3vw, 2.15rem);
   line-height: 1.2;
   color: var(--brand);
+  text-align: center;
 }
-h3 { margin: 0 0 0.4rem; color: var(--brand); }
-p { margin: 0 0 0.9rem; }
+h3 { margin: 0 0 0.4rem; color: var(--brand); text-align: center; }
+p { margin: 0 0 0.9rem; color: var(--text); }
 .section-intro { color: var(--text-muted); max-width: 68ch; }
 
 .two-col { display: grid; gap: 1.25rem; align-items: center; }
@@ -194,13 +217,14 @@ p { margin: 0 0 0.9rem; }
   text-align: center;
 }
 
-.feature-list { margin: 0.85rem 0 0; padding-left: 1.1rem; }
+.feature-list { margin: 0.85rem 0 0; padding-left: 1.1rem; color: var(--text); }
 .feature-list li { margin-bottom: 0.5rem; }
 .feature-list.light { color: var(--text); }
 
 .final-cta { background: linear-gradient(180deg, #f9fbff, #eef3fa); }
 .contact-cta { text-align: center; }
 .contact-cta p { color: var(--text-muted); max-width: 70ch; margin-inline: auto; }
+.section-muted p { color: var(--text); }
 
 .site-footer {
   background: #0b2343;
