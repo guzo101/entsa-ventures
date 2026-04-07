@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice Areas | ENTSA Ventures</title>
+  <meta name="description" content="Explore ENTSA Ventures focus areas: daily savings participation, target member groups, and trained worker placement support for businesses and households.">
+  <link rel="stylesheet" href="./styles.css?v=20260401-6">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <div class="top-contact-bar">
+    <div class="container top-contact-inner">
+      <p>Consult with confidence: <a href="tel:+260979415130">+260 97 9415130</a> | <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="./index.html" class="logo" aria-label="ENTSA Ventures home">ENTSA Ventures</a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a class="active" href="./practice-areas.html">Practice Areas</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <div class="header-actions">
+        <a class="phone-link" href="tel:+260979415130">+260 97 9415130</a>
+        <a class="btn btn-primary" href="./contact.html#contact-form-panel">Book Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="section page-hero">
+      <div class="container">
+        <p class="eyebrow">ENTSA Focus Areas</p>
+        <h1>Where ENTSA Delivers Practical Support</h1>
+        <p class="hero-support">Our core focus is helping income earners save daily and helping clients access trained workers when they need them.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container card-grid">
+        <article class="info-card"><h2>Daily Savings Slots</h2><p>Structured daily commitments through K100, K200, and K300 slots.</p></article>
+        <article class="info-card"><h2>Habit-Based Saving Model</h2><p>Simple behavioural approach that helps members save small amounts consistently.</p></article>
+        <article class="info-card"><h2>Who Can Join</h2><p>Market traders, bus drivers, small business owners, shop workers, and salaried employees.</p></article>
+        <article class="info-card"><h2>Monthly Challenge Preparation</h2><p>Build savings to manage rent, school fees, emergencies, and planned investments.</p></article>
+        <article class="info-card"><h2>Domestic Worker Placement</h2><p>Access to trained, reliable, and verified domestic workers.</p></article>
+        <article class="info-card"><h2>General Worker Placement</h2><p>Full-time and part-time trained workers for companies and households.</p></article>
+      </div>
+    </section>
+
+    <section class="section section-muted">
+      <div class="container">
+        <h2>Need Help Choosing the Right ENTSA Service?</h2>
+        <p class="hero-support">Contact us for guidance on the right savings slot or worker placement option based on your current needs.</p>
+        <p class="section-cta-inline">
+          <a class="btn btn-primary" href="./contact.html#contact-form-panel">Discuss Your Case</a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="./index.html" class="logo">ENTSA Ventures</a>
+        <p>Enterprise transformation solutions through daily savings support and trained worker placement services.</p>
+      </div>
+      <nav class="footer-links" aria-label="Useful links">
+        <h3 class="footer-title">Useful Links</h3>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About</a>
+        <a href="./services.html">Services</a>
+        <a href="./practice-areas.html">Practice Areas</a>
+        <a href="./contact.html">Contact</a>
+      </nav>
+      <nav class="footer-links" aria-label="Information links">
+        <h3 class="footer-title">Information</h3>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms & Conditions</a>
+        <a href="#">Cookie Policy</a>
+      </nav>
+      <div>
+        <h3 class="footer-title">Contact</h3>
+        <p class="footer-contact-item"><strong>Address:</strong> Lusaka, Zambia</p>
+        <p class="footer-contact-item"><strong>Mobile:</strong> <a href="tel:+260979415130">+260 97 9415130</a></p>
+        <p class="footer-contact-item"><strong>Email:</strong> <a href="mailto:info@entsaventures.com">info@entsaventures.com</a></p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p class="disclaimer">ENTSA Ventures Copyright &copy; 2026</p>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.querySelector(".menu-toggle");
+    const nav = document.querySelector(".primary-nav");
+    if (menuToggle && nav) {
+      menuToggle.addEventListener("click", () => {
+        const expanded = menuToggle.getAttribute("aria-expanded") === "true";
+        menuToggle.setAttribute("aria-expanded", String(!expanded));
+        nav.classList.toggle("nav-open");
+      });
+    }
+  </script>
+</body>
+</html>
+
+
+
